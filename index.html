@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+
     <style>
         .container {
             max-width: 700px;
             margin-top: 100px;
+        }
+        .botones1{
+            display: flex;
+            justify-content: end;
         }
     </style>
 </head>
@@ -18,7 +24,7 @@
     <form>
         <div class="row mb-3">
             <div class="col-md-6">
-                <label class="numeric">Card #</label>
+                <label class="numeric">Tarjeta #</label>
                 <input type="text" class="form-control" placeholder="XXXX-XXXX-XXXX-XXXX"pattern [0-9]{16}>
             </div>
 
@@ -28,7 +34,7 @@
             </div>
 
             <div class="col-md-3">
-                <label class="total">Amount</label>
+                <label class="total">Total</label>
                 <div class="cantidad">
                    <input type="numeric" class="form-control" placeholder="Amount"pattern [0-9]{1000}>
                 </div>
@@ -37,60 +43,65 @@
         </div>
         <div class="row mb-3">
             <div class="col-md-6">
-                <label class="form-label">First Name</label>
+                <label class="form-label">Primer Nombre</label>
                 <input type="text" class="form-control">
             </div>
             <div class="col-md-6">
-                <label class="form-label">Last Name</label>
+                <label class="form-label">Primer apellido</label>
                 <input type="text" class="form-control">
             </div>
         </div>
         <div class="row mb-3">
+            
             <div class="col-md-6">
-                <label class="form-label">City</label>
+                <label class="form-label">ciudad</label>
                 <input type="text" class="form-control">
             </div>
             <div class="col-md-3">
-                <label class="form-label">State</label>
-                <select class="form-select">
-                    <option selected>Pick a state</option>
-                    <option>New York</option>
-                    <option>California</option>
-                    <option>Texas</option>
+                <label class="form-label">provincia</label>
+                <select>
+                    <option><span class="seleccionar"</option></span>
+                    <option>madrid</option>
+                    <option>barcelona</option>
+                    <option>asturias</option>
+                    <option>toledo</option>
+                    <option>valencia</option>
+                    <option>granada</option>
+                    <option>guadalajara</option>
+                    <option>malaga</option>
+                    <option>pontevedra</option>
                 </select>
             </div>
             <div class="col-md-3">
-                <label class="form-label">Postal Code</label>
+                <label class="form-label">Codigo postal</label>
                 <input type="text" class="form-control">
             </div>
         </div>
         <div class="mb-3">
-            <label class="form-label">We accept:</label>
+            <label>Forma de pago:</label>
             <div class="border p-2 rounded bg-light">
                 <input type="radio">
-                <i class="fab fa-cc-visa fa-2x mx-1"></i>
+                <i class="fas-home fa-2x"><i class="fa-brands fa-cc-visa"></i></i>
                 <input type="radio">
-                <i class="fab fa-cc-mastercard fa-2x mx-1"></i>
+                <i class="fas-home fa-2x"><i class="fa-brands fa-paypal"></i></i>
                 <input type="radio">
-                <i class="fab fa-cc-amex fa-2x mx-1"></i>
+                <i class="fas-home fa-2x"><i class="fa-brands fa-cc-mastercard"></i></i>
                 <input type="radio">
-                <i class="fab fa-cc-paypal fa-2x mx-1"></i>
+                <i class="fas-home fa-2x"><i class="fa-solid fa-euro-sign"></i></i>
+                
             </div>
         </div>
         <div class="mb-3">
-            <label class="form-label">Message</label>
+            <label class="form-label">MENSAJE</label>
             <textarea class="form-control" rows="3"></textarea>
-            <small class="text-muted">Add any notes here.</small>
         </div>
-        <div class="d-flex justify-content-end">
-            <button type="button" class="btn btn-secondary me-2">Cancel</button>
-            <button type="submit" class="btn btn-primary">Send</button>
+        <div class="botones1">
+            <button type="button" class="btn btn-secondary me-2">Cancelar</button>
+            <button type="submit" class="btn btn-primary">Enviar</button>
         </div>
     </form>
 </div>
-<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<!-- Font Awesome (para los iconos de tarjetas) -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
 </body>
 </html>
