@@ -1,215 +1,38 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-    <div class="container">
-        <div>
-            <h1>Payment form example</h1>
-        </div>
-        <div class="card">
-            <label>card
-                <input type="card" placeholder="xxxx-xxxx-xxxx-xxxx" pattern [0-9]{3} inputmode="numeric"></label>
-
-                <label>cvc
-                    <input type="cvc" placeholder="xxx"></label>
-                
-                <label>amount
-                    <input type="Mount" placeholder="$ amount" pattern [0-9]{} inputmode="numeric"></label>
-        </div>
-        <br>
-        <div class="fistname"
-            <label> fist Name
-                <input type="fist" placeholder="paco martinez" pattern [0-9]{20} inputmode="text"></label>
-                <br>
-                <label> city
-                    <input type="city" pattern [0-9]{10} inputmode="text"></label>
-
-                    <p>We accept</p>
-                    <div class="radio">
-                        <label>
-                            <input type="radio">
-                            <img src="https://brandemia.org/sites/default/files/sites/default/files/mastercard_pentagram_press-3.jpg"></label>
-                                <label>
-                            <input type="radio">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToBpCaKcgwOncdimiUVFXDglYAKzh2rY9m8A&s"></label>
-                                <label>
-                            <input type="radio">
-                            <img src="https://cdn.pixabay.com/photo/2018/05/08/21/29/paypal-3384015_640.png" </label>
-                            <label>
-                            <input type="radio">
-                            <img src="https://cdn.pixabay.com/photo/2018/05/08/21/29/paypal-3384015_640.png" 
-                    </div>
-                        </label>
-                    </div>
-                    <div class="lastname">
-                        <label> last Name
-                            <input type="last" placeholder="paco martinez" pattern [0-9]{20} inputmode="text">
-                            <br>
-                        <label>state
-                            <select>
-                            <option>valencia</option>
-                            <option>madrid</option>
-                            <option>barcelona</option>
-                            <option>valencia</option>
-                            <option>madrid</option>
-                            <option>barcelona</option>
-                           </select>
-
-                           <label> Postal Code
-                            <input type="code"  
-                            pattern [0-9]{10} 
-                            inputmode="text">
-                        </label>
-                        <br>
-                        <br>
-                        <label> menssage
-                            <textarea>
-                                
-                            </textarea>
-                        </label>
-                            
-                    </div>
-                    
-
-
-        </div>
-
-</body>
-
-</html> -->
-
-<!-- <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Payment Form</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h3 class="mt-3 mb-3">Payment form example</h3>
-        </div>
-    <form>
-      <div class="row md-3">
-        <div class="col-md-6">
-          <label class="form-label">Card</label>
-          <input type="text" class="form-control" placeholder="XXXXXXXXXXXXXXXXXX">
-        </div>
-        <div class="col-md-3">
-          <label class="form-label">CVC#</label>
-          <input type="text" class="form-control" placeholder="000">
-        </div>
-        <div class="col-md-3">
-          <label class="form-label">Amount</label>
-          <input type="text" class="form-control" placeholder="Amount">
-        </div>
-        <div class="row mb-3">
-          <div class="col-md-6">
-            <label class="form-label">First Name</label>
-            <input type="text" class="form-control">
-          </div>
-          <div class="col-md-6">
-            <label class="form-label">Last Name</label>
-            <input type="text" class="form-control">
-          </div>
-          <div class="row mb-3">
-            <div class="col-md-6">
-              <label class="form-label">City</label>
-              <input type="text" class="form-control" placeholder="">
-            </div>
-            <div class="col-md-3">
-              <label class="form-label">State</label>
-              <select class="form-select">
-                <option selected>Pick a state</option>
-                <option>Madrid</option>
-                <option>Toledo</option>
-                <option>Valencia</option>
-              </select>
-            </div>
-            <div class="col-md-3">
-              <label class="form-label">Postal Code</label>
-              <input type="text" class="form-control">
-            </div>
-            <div class="mb-1">
-              <label class="form-label">We accept:</label>
-              <div class="border p-2 rounded bg-light">
-                <input type="checkbox">
-                <i class="fab fa-cc-visa fa-2x mx-1"></i>
-                <input type="checkbox">
-                <i class="fab fa-cc-mastercard fa-2x mx-1"></i>
-                <input type="checkbox">
-                <i class="fab fa-cc-paypal fa-2x mx-1"></i>
-              </div>
-            </div>
-            <div class="mb-6">
-              <label class="form-label">Message</label>
-              <textarea class="form-control" rows="3"></textarea>
-              <small class="text-muted">Add any notes here.</small>
-            </div>
-            <div class="d-flex justify-content-end">
-              <button type="button" class="btn btn-secondary me-2">Cancel</button>
-              <button type="submit" class="btn btn-primary">Send</button>
-            </div>
-          </div>
-    </form>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
-</body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment Form</title>
-    <!-- Bootstrap CSS -->
+    <title>Payment</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         .container {
             max-width: 700px;
-            margin-top: 50px;
-        }
-        .alert-danger {
-            font-size: 14px;
+            margin-top: 100px;
         }
     </style>
 </head>
 <body>
 <div class="container">
-    <h3 class="mb-3">Payment form example</h3>
-    
-    
+    <h2 class="mb-3">Payment form example</h2>
     <form>
         <div class="row mb-3">
             <div class="col-md-6">
-                <label class="form-label">Card #</label>
-                <input type="text" class="form-control" placeholder="XXXXXXXXXXXXXXXXXX"pattern [0-9]{16}>
+                <label class="numeric">Card #</label>
+                <input type="text" class="form-control" placeholder="XXXX-XXXX-XXXX-XXXX"pattern [0-9]{16}>
             </div>
+
             <div class="col-md-3">
-                <label class="form-label">CVC #</label>
-                <input type="text" class="form-control" placeholder="0000"pattern [0-9]{3}>
+                <label class="clave">CVC #</label>
+                <input type="text" class="form-control" placeholder="000"pattern [0-9]{3}>
             </div>
+
             <div class="col-md-3">
-                <label class="form-label">Amount</label>
-                <div class="input-group">
-                    <span class="input-group-text">$</span>
-                    <input type="numeric" class="form-control" placeholder="Amount"pattern [0-9]{1000}>
+                <label class="total">Amount</label>
+                <div class="cantidad">
+                   <input type="numeric" class="form-control" placeholder="Amount"pattern [0-9]{1000}>
                 </div>
+
             </div>
         </div>
         <div class="row mb-3">
