@@ -16,12 +16,18 @@
             display: flex;
             justify-content: end;
         }
+        .alert alert-danger{
+            background : brown;
+        }
     </style>
 </head>
 <body>
 <div class="container">
     <h2 class="mb-3">Payment form example</h2>
     <form>
+        <div class="alert alert-danger" role="alert" >
+           Some fields are missing 
+        </div>
         <div class="row mb-3">
             <div class="col-md-6">
                 <label class="numeric">Tarjeta #</label>
@@ -80,13 +86,13 @@
         <div class="mb-3">
             <label>Forma de pago:</label>
             <div class="border p-2 rounded bg-light">
-                <input type="radio">
+                <input type="radio" NAME="option" value="1">
                 <i class="fas-home fa-2x"><i class="fa-brands fa-cc-visa"></i></i>
-                <input type="radio">
+                <input type="radio"NAME="option" value="2">
                 <i class="fas-home fa-2x"><i class="fa-brands fa-paypal"></i></i>
-                <input type="radio">
+                <input type="radio"NAME="option" value="3">
                 <i class="fas-home fa-2x"><i class="fa-brands fa-cc-mastercard"></i></i>
-                <input type="radio">
+                <input type="radio"NAME="option" value="4">
                 <i class="fas-home fa-2x"><i class="fa-solid fa-euro-sign"></i></i>
                 
             </div>
@@ -96,8 +102,8 @@
             <textarea class="form-control" rows="3"></textarea>
         </div>
         <div class="botones1">
-            <button type="button" class="bg-danger">Cancelar</button>
-            <button type="submit" class="bg-primary" >Enviar</button>
+            <button type="button" class="btn btn-secondary">Cancelar</button>
+            <button type="submit"  class="btn btn-primary">Enviar</button>
         </div>
     </form>
 </div>
